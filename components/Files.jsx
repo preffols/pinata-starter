@@ -10,7 +10,7 @@ export default function Files(props) {
       <p>Your IPFS CID:</p>
       <p>{props.cid}</p>
       <a
-        href={`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=${process.env.NEXT_PUBLIC_GATEWAY_TOKEN}`}
+        href={`https://${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=${process.env.NEXT_PUBLIC_GATEWAY_TOKEN}`}
         rel="noopener noreferrer"
         target="_blank"
       >

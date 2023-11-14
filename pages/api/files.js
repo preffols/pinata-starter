@@ -38,6 +38,7 @@ export default async function handler(req, res) {
         }
         const response = await saveFile(files.file);
         const { IpfsHash } = response;
+    
 
         return res.send(IpfsHash);
       });
